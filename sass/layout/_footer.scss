@@ -1,0 +1,32 @@
+        /*  FOOTER    */
+        footer {
+            background-color: rgb( 49, 47, 47);
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .footer_title {
+            font-size: 20px;
+            color: white;
+            margin-bottom: 10px;
+            font-family: 'Shrikhand', cursive;
+        }
+        .footer_info {
+            display: flex;
+            flex-direction: column;
+            i {
+                font-size: 12px;
+                padding-right: 10px;
+            }
+            a {
+                width: 60%;
+                display: block;
+                color: white;
+                text-decoration: none;
+                padding: 5px 0;
+                &:hover {
+                    color: rgb(172, 164, 164);
+                }
+            }
+        }
+
+        

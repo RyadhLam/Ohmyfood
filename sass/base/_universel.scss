@@ -1,0 +1,59 @@
+/*Balise universel*/
+@import "../Utils/variables";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+html, body {
+	font-size: 17px;
+	font-family: 'Roboto', sans-serif, Arial;
+}
+
+main {
+	margin-top: 3px;
+}
+body{
+	position: relative;
+}
+
+h1{
+	font-family: 'Shrikhand', cursive;
+}
+
+.heart{
+	cursor: pointer;
+    width: 12%;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    position: relative;
+    justify-content: center;
+&_transparent{
+    position: absolute;
+    opacity: 1;
+&:hover{
+    opacity: 0;
+	}
+}
+&_color{
+    position: absolute;
+    color: $color-second ;
+    opacity: 0;
+    transition: .6s;
+&:hover{
+    opacity: 1;
+}
+}
+}
+
+.heart_index{
+    position: absolute;
+    right: 5px;
+    bottom: 30px;
+}

@@ -1,0 +1,12 @@
+.bouton{
+	color: white;
+	background: linear-gradient(174deg,$color-second 3%, $color-primary);
+	border-radius: 100px;
+	padding: 15px;
+	@include shadow;
+}
+
+.bouton:active{
+	opacity: 0.9;
+	box-shadow: 6px 8px 10px rgb(0 0 0 / 45%);
+}

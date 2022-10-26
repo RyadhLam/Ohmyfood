@@ -1,0 +1,28 @@
+header{
+	@include shadow;
+}
+
+.header_index {
+	height: 80px;
+	padding: 30px 0;
+}
+.header__logo {
+	max-width: 45%;
+	display: flex;
+    margin: 0 auto;
+}
+
+.header_menu {
+	padding: 10px 0;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-evenly;
+	a{
+		display: block;
+		padding-left: 15px;
+	}
+	i{
+		color: rgb(44, 44, 44);
+		font-size: 20px;
+	}
+}
