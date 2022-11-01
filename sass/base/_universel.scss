@@ -28,6 +28,7 @@ h1{
 
 .heart{
 	cursor: pointer;
+    @include center;
     width: 12%;
     align-items: center;
     display: flex;
@@ -44,6 +45,8 @@ h1{
 &_color{
     position: absolute;
     color: $color-second ;
+     // color: linear-gradient($color-second,$color-primary);
+     //   background-clip: text;
     opacity: 0;
     transition: .6s;
 &:hover{
