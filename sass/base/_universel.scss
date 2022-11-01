@@ -25,7 +25,6 @@ body{
 h1{
 	font-family: 'Shrikhand', cursive;
 }
-
 .heart{
 	cursor: pointer;
     @include center;
@@ -45,8 +44,7 @@ h1{
 &_color{
     position: absolute;
     color: $color-second ;
-     // color: linear-gradient($color-second,$color-primary);
-     //   background-clip: text;
+    background-clip: var(#ff79da #9356dc);
     opacity: 0;
     transition: .6s;
 &:hover{
@@ -60,3 +58,4 @@ h1{
     right: 5px;
     bottom: 30px;
 }
+
