@@ -1,5 +1,6 @@
 /*Balise universel*/
 @import "../Utils/variables";
+@import "../Utils/mixins";
 
 * {
 	box-sizing: border-box;
@@ -15,25 +16,16 @@ html, body {
 	font-family: 'Roboto', sans-serif, Arial;
 }
 
-main {
-	margin-top: 3px;
-}
-body{
-	position: relative;
-}
-
 h1{
 	font-family: 'Shrikhand', cursive;
 }
+
 .heart{
 	cursor: pointer;
     @include center;
     width: 12%;
-    align-items: center;
-    display: flex;
     font-size: 25px;
     position: relative;
-    justify-content: center;
 &_transparent{
     position: absolute;
     opacity: 1;
@@ -42,13 +34,17 @@ h1{
 	}
 }
 &_color{
+    color: transparent;
     position: absolute;
-    color: $color-primary;
     opacity: 0;
-    transition: .6s;
 &:hover{
     opacity: 1;
-}
+    background: linear-gradient(#ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    transition: opacity .6s ease-out;
+    }
 }
 }
 
@@ -57,4 +53,5 @@ h1{
     right: 5px;
     bottom: 30px;
 }
+
 

@@ -13,11 +13,12 @@ a {
 html, body {
   font-size: 17px;
   font-family: "Roboto", sans-serif, Arial;
-} 
+}
 
 h1 {
   font-family: "Shrikhand", cursive;
 }
+
 .heart {
   cursor: pointer;
   display: flex;
@@ -35,18 +36,22 @@ h1 {
   opacity: 0;
 }
 .heart_color {
+  color: transparent;
   position: absolute;
-  color: #9356dc;
   opacity: 0;
-  transition: opacity 0.6s;
 }
 .heart_color:hover {
   opacity: 1;
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  transition: opacity 0.6s ease-out;
 }
 
 .heart_index {
   position: absolute;
-  right: 20px;
+  right: 5px;
   bottom: 30px;
 }
 
@@ -176,9 +181,10 @@ header {
 .topform input {
   border: none;
   background-color: #eaeaea;
-  font-size: 20px;
   margin-left: 15px;
   outline: none;
+  width: 100%;
+  font-size: 17px;
 }
 
 /*   MENU de nav   */
@@ -264,7 +270,7 @@ header {
   flex-direction: column;
   margin: 30px 0;
   width: 100%;
-  height: 285px;
+  height: 360px;
   border-radius: 25px;
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.17);
 }
@@ -283,7 +289,7 @@ header {
 
 .card_img {
   border-radius: 25px 25px 0 0;
-  height: 210px;
+  height: 280px;
   width: 100%;
   object-fit: cover;
 }
@@ -302,7 +308,7 @@ header {
   justify-content: space-between;
   font-size: 20px;
   font-weight: 800;
-  padding: 15px 10px 3px 20px;
+  padding: 15px 40px 3px 20px;
 }
 .card_title i {
   transform: translate(0, 50%);
@@ -476,7 +482,7 @@ footer {
   font-size: 20px;
   color: white;
   margin-bottom: 10px;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", cursive;
 }
 
 .footer_info {
@@ -508,6 +514,11 @@ footer {
   .header__logo {
     max-width: 220px;
     margin: 6px auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .topform form {
+    margin-left: 55px;
   }
 }
 @media screen and (min-width: 426px) {
