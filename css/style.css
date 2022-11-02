@@ -36,7 +36,7 @@ h1 {
 }
 .heart_color {
   position: absolute;
-  color: #ff79da;
+  color: #9356dc;
   opacity: 0;
   transition: opacity 0.6s;
 }
@@ -476,7 +476,7 @@ footer {
   font-size: 20px;
   color: white;
   margin-bottom: 10px;
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand";
 }
 
 .footer_info {

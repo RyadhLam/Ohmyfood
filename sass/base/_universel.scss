@@ -43,8 +43,7 @@ h1{
 }
 &_color{
     position: absolute;
-    color: $color-second ;
-    background-clip: var(#ff79da #9356dc);
+    color: $color-primary;
     opacity: 0;
     transition: .6s;
 &:hover{
